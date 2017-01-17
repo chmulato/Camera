@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="intents.android.treinamento.gft.boml.camera.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/tituloActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Treinamento Android" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/subTituloActivity"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tituloActivity"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="Câmera" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rodapeActivity"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_gft"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/operacoesActivity"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@id/subTituloActivity"
+        android:layout_above="@id/rodapeActivity"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/botaoCameraSimples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir câmera simples"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_rounded_corners_blue" />
+
+        <Button
+            android:id="@+id/botaoCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botaoCameraSimples"
+            android:text="Abrir câmera aplicação"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_rounded_corners_blue" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
